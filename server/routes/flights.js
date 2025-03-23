@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Amadeus = require('amadeus');
 const { getAmadeusToken } = require('../services/flightServices');
+const axios = require('axios');
 
 const amadeus = new Amadeus({
   clientId: process.env.AMADEUS_CLIENT_ID,
@@ -24,34 +25,55 @@ router.get('/token', async (req, res) => {
 router.get('/airports/search', async (req, res) => {
   try {
     const { query } = req.query;
-    
+    console.log('Searching airports for query:', query);
     if (!query || query.length < 1) {
       return res.json([]);
     }
 
-    const response = await amadeus.referenceData.locations.get({
-      subType: 'AIRPORT',
-      keyword: query,
-      view: 'FULL'
+    // Get Amadeus access token
+    const token = await getAmadeusToken();
+    console.log('Amadeus token retrieved:', token);
+    
+    // Call Amadeus API for location search
+    const response = await axios.get(`${process.env.AMADEUS_BASE_URL}/v1/reference-data/locations`, {
+      headers: {
+        'Authorization': `Bearer ${token}`,
+        'Accept': 'application/json'
+      },
+      params: {
+        subType: 'AIRPORT',
+        keyword: query,
+        page: { limit: 10 }
+      }
     });
 
-    const airports = response.data.map(airport => ({
-      code: airport.iataCode,
-      name: airport.name,
-      city: airport.address?.cityName || airport.name,
-      country: airport.address?.countryName,
-      latitude: airport.geoCode?.latitude,
-      longitude: airport.geoCode?.longitude
+    console.log('Amadeus API response:', response.data);
+
+    // Transform Amadeus response to match our frontend format
+    const airports = response.data.data.map(location => ({
+      id: location.id,
+      code: location.iataCode || '',
+      name: location.address.cityName || '',
+      city: location.address.cityName || '',
+      country: location.address.countryName || ''
     }));
 
     res.json(airports);
   } catch (error) {
     console.error('Error searching airports:', error);
+    
+    // Handle rate limiting
     if (error.response?.status === 429) {
-      res.status(429).json({ error: 'Rate limit exceeded. Please try again later.' });
-    } else {
-      res.status(500).json({ error: 'Failed to search airports' });
+      return res.status(429).json({ 
+        error: 'Rate limit exceeded. Please try again in a few seconds.' 
+      });
     }
+
+    // Handle other errors
+    res.status(500).json({ 
+      error: 'Failed to search airports',
+      message: error.message 
+    });
   }
 });
 

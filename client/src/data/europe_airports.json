@@ -1,0 +1,96 @@
+[
+  { "city": "Amsterdam", "code": "AMS", "name": "Amsterdam Airport Schiphol" },
+  { "city": "Rotterdam", "code": "RTM", "name": "Rotterdam The Hague Airport" },
+  { "city": "The Hague", "code": "RTM", "name": "Rotterdam The Hague Airport" },
+  { "city": "Groningen", "code": "GRQ", "name": "Groningen Airport Eelde" },
+  { "city": "Utrecht", "code": "UTR", "name": "Utrecht Central Station" },
+
+  { "city": "Barcelona", "code": "BCN", "name": "Barcelona El Prat Airport" },
+  { "city": "Madrid", "code": "MAD", "name": "Adolfo Suárez Madrid-Barajas Airport" },
+  { "city": "Valencia", "code": "VLC", "name": "Valencia Airport" },
+  { "city": "Seville", "code": "SVQ", "name": "Seville Airport" },
+  { "city": "Bilbao", "code": "BIO", "name": "Bilbao Airport" },
+  { "city": "Granada", "code": "GRX", "name": "Federico García Lorca Airport" },
+  { "city": "Malaga", "code": "AGP", "name": "Malaga-Costa del Sol Airport" },
+  { "city": "Alicante", "code": "ALC", "name": "Alicante-Elche Airport" },
+  { "city": "Palma de Mallorca", "code": "PMI", "name": "Palma de Mallorca Airport" },
+
+  { "city": "Berlin", "code": "TXL", "name": "Berlin Tegel Airport" },
+  { "city": "Munich", "code": "MUC", "name": "Munich Airport" },
+  { "city": "Hamburg", "code": "HAM", "name": "Hamburg Airport" },
+  { "city": "Frankfurt", "code": "FRA", "name": "Frankfurt Airport" },
+  { "city": "Düsseldorf", "code": "DUS", "name": "Düsseldorf Airport" },
+  { "city": "Cologne", "code": "CGN", "name": "Cologne Bonn Airport" },
+  { "city": "Stuttgart", "code": "STR", "name": "Stuttgart Airport" },
+  { "city": "Leipzig", "code": "LEJ", "name": "Leipzig/Halle Airport" },
+  { "city": "Nuremberg", "code": "NUE", "name": "Nuremberg Airport" },
+
+  { "city": "Paris", "code": "CDG", "name": "Charles de Gaulle Airport" },
+  { "city": "Nice", "code": "NCE", "name": "Nice Côte d'Azur Airport" },
+  { "city": "Marseille", "code": "MRS", "name": "Marseille Provence Airport" },
+  { "city": "Lyon", "code": "LYS", "name": "Lyon-Saint Exupéry Airport" },
+  { "city": "Toulouse", "code": "TLS", "name": "Toulouse-Blagnac Airport" },
+  { "city": "Strasbourg", "code": "SXB", "name": "Strasbourg Airport" },
+  { "city": "Bordeaux", "code": "BOD", "name": "Bordeaux-Mérignac Airport" },
+  { "city": "Lille", "code": "LIL", "name": "Lille Airport" },
+
+  { "city": "London", "code": "LHR", "name": "Heathrow Airport" },
+  { "city": "Manchester", "code": "MAN", "name": "Manchester Airport" },
+  { "city": "Birmingham", "code": "BHX", "name": "Birmingham Airport" },
+  { "city": "Liverpool", "code": "LPL", "name": "Liverpool John Lennon Airport" },
+  { "city": "Edinburgh", "code": "EDI", "name": "Edinburgh Airport" },
+  { "city": "Glasgow", "code": "GLA", "name": "Glasgow Airport" },
+  { "city": "Bristol", "code": "BRS", "name": "Bristol Airport" },
+  { "city": "Leeds", "code": "LBA", "name": "Leeds Bradford Airport" },
+
+  { "city": "Rome", "code": "FCO", "name": "Leonardo da Vinci–Fiumicino Airport" },
+  { "city": "Milan", "code": "MXP", "name": "Milan Malpensa Airport" },
+  { "city": "Venice", "code": "VCE", "name": "Venice Marco Polo Airport" },
+  { "city": "Florence", "code": "FLR", "name": "Florence Airport" },
+  { "city": "Naples", "code": "NAP", "name": "Naples International Airport" },
+  { "city": "Bologna", "code": "BLQ", "name": "Bologna Guglielmo Marconi Airport" },
+  { "city": "Turin", "code": "TRN", "name": "Turin Airport" },
+  { "city": "Genoa", "code": "GOA", "name": "Genoa Cristoforo Colombo Airport" },
+
+  { "city": "Zurich", "code": "ZRH", "name": "Zurich Airport" },
+  { "city": "Geneva", "code": "GVA", "name": "Geneva International Airport" },
+  { "city": "Basel", "code": "BSL", "name": "EuroAirport Basel-Mulhouse-Freiburg" },
+  { "city": "Bern", "code": "BRN", "name": "Bern Airport" },
+  { "city": "Lucerne", "code": "LUG", "name": "Lugano Airport" },
+
+  { "city": "Copenhagen", "code": "CPH", "name": "Copenhagen Airport" },
+  { "city": "Aarhus", "code": "AAR", "name": "Aarhus Airport" },
+  { "city": "Odense", "code": "ODE", "name": "Odense Airport" },
+
+  { "city": "Oslo", "code": "OSL", "name": "Oslo Gardermoen Airport" },
+  { "city": "Bergen", "code": "BGO", "name": "Bergen Airport" },
+  { "city": "Stavanger", "code": "SVG", "name": "Stavanger Airport" },
+
+  { "city": "Stockholm", "code": "ARN", "name": "Stockholm Arlanda Airport" },
+  { "city": "Gothenburg", "code": "GOT", "name": "Gothenburg Landvetter Airport" },
+  { "city": "Malmö", "code": "MMX", "name": "Malmö Airport" },
+
+  { "city": "Helsinki", "code": "HEL", "name": "Helsinki-Vantaa Airport" },
+  { "city": "Turku", "code": "TKU", "name": "Turku Airport" },
+  { "city": "Oulu", "code": "OUL", "name": "Oulu Airport" },
+
+  { "city": "Belgrade", "code": "BEG", "name": "Belgrade Nikola Tesla Airport" },
+  { "city": "Niš", "code": "INI", "name": "Niš Constantine the Great Airport" },
+  { "city": "Podgorica", "code": "TGD", "name": "Podgorica Airport" },
+  { "city": "Tivat", "code": "TIV", "name": "Tivat Airport" },
+
+  { "city": "Bucharest", "code": "OTP", "name": "Henri Coandă International Airport" },
+  { "city": "Cluj-Napoca", "code": "CLJ", "name": "Cluj-Napoca International Airport" },
+  { "city": "Iași", "code": "IAS", "name": "Iași International Airport" },
+  { "city": "Constanța", "code": "CND", "name": "Mihail Kogălniceanu International Airport" },
+
+  { "city": "Warsaw", "code": "WAW", "name": "Warsaw Chopin Airport" },
+  { "city": "Kraków", "code": "KRK", "name": "John Paul II International Airport Kraków–Balice" },
+  { "city": "Gdańsk", "code": "GDN", "name": "Gdańsk Lech Wałęsa Airport" },
+  { "city": "Wrocław", "code": "WRO", "name": "Wrocław Copernicus Airport" },
+
+  { "city": "Prague", "code": "PRG", "name": "Václav Havel Airport Prague" },
+  { "city": "Brno", "code": "BRQ", "name": "Brno–Tuřany Airport" },
+  { "city": "Ostrava", "code": "OSR", "name": "Ostrava Leos Janacek Airport" }
+]
+
